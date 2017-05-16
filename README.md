@@ -19,7 +19,7 @@ The I worked in the cycles, to move out of them assigments. Then add the request
 Specially in updateaPositions() and addEventListener.
 
 ### pizza.html
-I changed the pizzeria file o pizzeria.png
+I changed the file pizzeria.jpg for pizzeria.png
 
 
 Reduction of the files: /views/images/pizzeria.png, img/me.png
