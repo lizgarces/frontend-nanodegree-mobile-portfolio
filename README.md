@@ -9,7 +9,8 @@ You will be able to see the project of the nanodegree.
 
 ## Modifications
 I worked optimizing the files: index.html, views/js/main.js, views/pizza.html.
-#### index.html:
+
+### index.html:
 Since this is not a big project, I try adding all the style.css in this html. And of course, I deleted the call to this file.
 Also, I added async to the call of analytics.js and  perfmatters.js
 
