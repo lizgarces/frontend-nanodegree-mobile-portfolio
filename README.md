@@ -29,6 +29,7 @@ I minified the files:
 - css/print.css
 - css/style.css
 - index.html
+
 And all the original files are next to the minified file with the name xOriginal.x
 
 Reduction of the files: /views/images/pizzeria.png, img/me.png
