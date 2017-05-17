@@ -19,8 +19,17 @@ The I worked in the cycles, to move out of them assigments. Then add the request
 Specially in updateaPositions() and addEventListener.
 
 ### pizza.html
-I changed the file pizzeria.jpg for pizzeria.png
+I changed the file pizzeria.jpg for an optimized pizzeria.jpg
 
+### Minify files
+I minified the files:
+/views/css/boostrap-grid.css
+/views/css/style.css 
+/views/js/main.js
+css/print.css
+css/style.css
+index.html
+And all the original files are next to the minified file with the name xOriginal.x
 
 Reduction of the files: /views/images/pizzeria.png, img/me.png
 
