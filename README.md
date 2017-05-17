@@ -23,12 +23,12 @@ I changed the file pizzeria.jpg for an optimized pizzeria.jpg
 
 ### Minify files
 I minified the files:
-/views/css/boostrap-grid.css
-/views/css/style.css 
-/views/js/main.js
-css/print.css
-css/style.css
-index.html
+- /views/css/boostrap-grid.css
+- /views/css/style.css 
+- /views/js/main.js
+- css/print.css
+- css/style.css
+- index.html
 And all the original files are next to the minified file with the name xOriginal.x
 
 Reduction of the files: /views/images/pizzeria.png, img/me.png
