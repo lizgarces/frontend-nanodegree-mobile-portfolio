@@ -17,10 +17,10 @@ Also, I added async to the call of analytics.js and  perfmatters.js
 ### views/js/main.js
 This one was complicated. First I changed the querySelector for getElementById or getElementbyName.
 The I worked in the cycles, to move out of them assigments. Then add the requestAnimationFrame.
-Specially in updateaPositions() and addEventListener.
+Specially in updatePositions(), changePizzaSizes and addEventListener.
 
 ### pizza.html
-I changed the file pizzeria.jpg for an optimized pizzeria.jpg
+I changed the file views/images/pizzeria.jpg for an optimized pizzeria.jpg
 
 ### Minify files
 I minified the files:
