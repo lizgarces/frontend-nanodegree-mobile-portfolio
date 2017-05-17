@@ -404,7 +404,7 @@ var resizePizzas = function(size) {
 
   // Changes the value for the size of the pizza above the slider
   function changeSliderLabel(size) {
-    // eliminate querySelector
+    // eliminate querySelector with getElementById
     switch(size) {
       case "1":
         document.getElementById("pizzaSize").innerHTML = "Small";
@@ -425,7 +425,7 @@ var resizePizzas = function(size) {
    // Returns the size difference to change a pizza element from one size to another. Called by changePizzaSlices(size).
   function determineDx (elem, size) {
     var oldWidth = elem.offsetWidth;
-    //eliminate querySelectAll
+    //eliminate querySelectAll with getElementId
     var windowWidth = document.getElementById("randomPizzas").offsetWidth;
     var oldSize = oldWidth / windowWidth;
 
@@ -506,7 +506,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-// clean the for
+// clean the for. It has lots of assignments that are made every time without reason.
 // eliminate querySelectAll
   var items = document.getElementsByClassName('mover');
   var scroll = document.body.scrollTop / 1250;
@@ -517,7 +517,7 @@ function updatePositions() {
     phaseArray.push(calcPhase);
   }
 
-// clean the for
+// clean the for and use transform because it is faster.
   for (var i = 0; i < maxlength; i++) {
     items[i].style.transform = "translateX(" + 200 * phaseArray[i % 5] + "px)";
   }
@@ -531,7 +531,7 @@ function updatePositions() {
   }
 };
 
-// runs updatePositions on scroll
+// runs updatePositions on scroll, so the requestAnimationFrame was needed it
 window.addEventListener('scroll', function(e) {
   window.requestAnimationFrame(updatePositions);
 });
@@ -540,9 +540,9 @@ window.addEventListener('scroll', function(e) {
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
+  //   change the querySelector with getElementById
   var pizza = document.getElementById("movingPizzas1");
-// we don't need 200 pizzas. In my large monitor I can see enough 40 pizzas
-// clean the for
+  // we don't need 200 pizzas. In my large monitor I can use 40 pizzas
   for (var i = 0; i < 40; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
@@ -550,9 +550,11 @@ document.addEventListener('DOMContentLoaded', function() {
     elem.style.height = "100px";
     elem.style.width = "73.333px";
     elem.basicLeft = ((i % cols) * s );
+    // change the basicLeft with style.left
     elem.style.left =  (i % cols) * s  + 'px';
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
     pizza.appendChild(elem);
   }
+  //   add requestAnimationFrame
   window.requestAnimationFrame(updatePositions);
 });
