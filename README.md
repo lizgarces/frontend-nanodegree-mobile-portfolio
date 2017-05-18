@@ -5,6 +5,9 @@ This is project for the course frontend Nanodegree progam.
 Type or copy the following link in the browser:
 https://lizgarces.github.io/frontend-nanodegree-mobile-portfolio/
 
+You can also execute the project from your browser. Just open the file
+index.html from the root directory.
+
 You will be able to see the project of the nanodegree.
 
 ## Modifications
@@ -25,7 +28,7 @@ I changed the file views/images/pizzeria.jpg for an optimized pizzeria.jpg
 ### Minify files
 I minified the files:
 - /views/css/boostrap-grid.css
-- /views/css/style.css 
+- /views/css/style.css
 - /views/js/main.js
 - css/print.css
 - css/style.css
@@ -40,4 +43,3 @@ For submission, I created 2 directories:
 
 ### Images
 Reduction of the files: /views/images/pizzeria.jpg, img/me.png
-
