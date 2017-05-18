@@ -31,7 +31,12 @@ I minified the files:
 - css/style.css
 - index.html
 
-And all the original files are next to the minified file with the name xOriginal.x
+For this repository, I left all the original files and o the minified file in the same director
+The source file has the name xOriginal.x
+
+For submission, I created 2 directories:
+src/  for the source files
+dist/   with the minified files.
 
 Reduction of the files: /views/images/pizzeria.png, img/me.png
 
