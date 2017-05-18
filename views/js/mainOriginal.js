@@ -513,7 +513,7 @@ function updatePositions() {
   var maxlength = items.length;
   var phaseArray = [];
   for (var i = 0; i < 5; i++) {
-    var calcPhase = Math.sin(scroll + (i % 5));
+    var calcPhase = Math.sin(scroll + i);
     phaseArray.push(calcPhase);
   }
 
@@ -542,9 +542,13 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var pizza = document.getElementById("movingPizzas1");
-// we don't need 200 pizzas. In my large monitor I can see enough 40 pizzas
+  // suggestion from my reviewr to get a more accurate number of pizzas
+  var rows = window.screen.height / s;
+  var numPizzas = rows * cols;
+  console.log(numPizzas);
+// we don't need 200 pizzas. I will calculate the numer of pizzas
 // clean the for
-  for (var i = 0; i < 26; i++) {
+  for (var i = 0; i < numPizzas; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
